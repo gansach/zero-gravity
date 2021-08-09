@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/zero-gravity/static/css/main.7a824f93.chunk.css",
+    "main.js": "/zero-gravity/static/js/main.a26f741b.chunk.js",
+    "main.js.map": "/zero-gravity/static/js/main.a26f741b.chunk.js.map",
+    "runtime-main.js": "/zero-gravity/static/js/runtime-main.0e777faa.js",
+    "runtime-main.js.map": "/zero-gravity/static/js/runtime-main.0e777faa.js.map",
+    "static/js/2.399cdc10.chunk.js": "/zero-gravity/static/js/2.399cdc10.chunk.js",
+    "static/js/2.399cdc10.chunk.js.map": "/zero-gravity/static/js/2.399cdc10.chunk.js.map",
+    "static/js/3.09fdb15d.chunk.js": "/zero-gravity/static/js/3.09fdb15d.chunk.js",
+    "static/js/3.09fdb15d.chunk.js.map": "/zero-gravity/static/js/3.09fdb15d.chunk.js.map",
+    "index.html": "/zero-gravity/index.html",
+    "static/css/main.7a824f93.chunk.css.map": "/zero-gravity/static/css/main.7a824f93.chunk.css.map",
+    "static/js/2.399cdc10.chunk.js.LICENSE.txt": "/zero-gravity/static/js/2.399cdc10.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e777faa.js",
+    "static/js/2.399cdc10.chunk.js",
+    "static/css/main.7a824f93.chunk.css",
+    "static/js/main.a26f741b.chunk.js"
+  ]
+}
