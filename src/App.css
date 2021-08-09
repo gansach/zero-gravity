@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+* {
+  font: inter;
+  text-transform: uppercase;
+}
+
+.img {
+  box-shadow: 9px 10px 16px 0px rgba(0, 0, 0, 0.38);
+}
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* ==============Wrapper============== */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: animate-bottom;
+  animation-duration: 1s;
+}
+
+@keyframes animate-bottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* ==============Form============== */
+#wrapper form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+#wrapper form select {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #e82d96;
+  background-color: white;
+  border-radius: 8px;
+}
+
+#wrapper form input[type="text"] {
+  vertical-align: middle;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #e82d96;
+  border-radius: 8px;
+}
+
+#wrapper form input[type="button"] {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #e82d96;
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+}
+
+#wrapper form input[type="button"]:hover {
+  background-color: hsla(326, 82%, 45%, 0.89);
+  border-radius: 8px;
+}
+
+/* ==============Modal============== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  align-items: baseline;
+}
+
+.modal-content p {
+  width: 50%;
+}
+
+.close {
+  flex-grow: 1;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ==============Cards============== */
+#results *,
+#results *::before,
+#results *::after {
+  box-sizing: border-box;
+}
+
+#results {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-color: #e82d96;
+}
+
+.cards_item {
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    /* width: 50%; */
+    flex-grow: 1;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card_content {
+  padding: 1rem;
+  height: 100%;
+  /* background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%); */
+}
+
+.card_text {
+  color: #ffffff;
+  color: #2b2b2b;
+
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+/* ==============Media Queries============== */
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  #wrapper form input[type="text"],
+  #wrapper form input[type="button"],
+  #wrapper form select {
+    display: block;
+    margin: 5px;
+  }
+
+  #wrapper form {
+    width: 85%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 40rem) {
+  .cards {
+    display: block;
+  }
+}
+
+#video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+#responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ==============Loading============== */
+#loading {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8) url("./loading.gif") 50% 50% no-repeat;
+}
